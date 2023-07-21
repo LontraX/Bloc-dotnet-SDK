@@ -1,0 +1,12 @@
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\bin\Debug\net6.0\Bloc.SDK.deps.json
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\bin\Debug\net6.0\Bloc.SDK.dll
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\bin\Debug\net6.0\Bloc.SDK.pdb
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\obj\Debug\net6.0\Bloc.SDK.csproj.AssemblyReference.cache
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\obj\Debug\net6.0\Bloc.SDK.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\obj\Debug\net6.0\Bloc.SDK.AssemblyInfoInputs.cache
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\obj\Debug\net6.0\Bloc.SDK.AssemblyInfo.cs
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\obj\Debug\net6.0\Bloc.SDK.csproj.CoreCompileInputs.cache
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\obj\Debug\net6.0\Bloc.SDK.dll
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\obj\Debug\net6.0\refint\Bloc.SDK.dll
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\obj\Debug\net6.0\Bloc.SDK.pdb
+C:\Users\Olumide Joda\source\repos\Lontra.ai-Backend\bloc\Bloc.SDK\obj\Debug\net6.0\ref\Bloc.SDK.dll
