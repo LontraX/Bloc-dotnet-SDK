@@ -49,8 +49,8 @@ namespace Bloc.SDK.Endpoints
 
         string GetSupportedBills();
         string GetSupportedOperators();
-        string GetOperatorProducts();
-        string CustomerDeviceValidation();
+        string GetOperatorProducts(string operatorID);
+        string CustomerDeviceValidation(string operatorID);
         string MakePayment();
     }
 }

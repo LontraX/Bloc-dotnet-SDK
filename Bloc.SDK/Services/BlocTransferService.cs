@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bloc.SDK.Services
 {
-    public partial class BlocService:IBillsPaymentService
+    public partial class BlocService:ITransferService
     {
     }
 }

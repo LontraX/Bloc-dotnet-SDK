@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Bloc.SDK.Interfaces
 {
-    internal interface IBlocService
+    public interface IBlocService
     {
+        public IBillsPaymentService BillsPayment { get; }
+        public ICustomerService Customer { get; }
+        public ITransferService Transfer { get; }
+        public IVirtualAccountService VirtualAccount { get; }
+        public IWalletService Wallet { get; }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Bloc.SDK.Interfaces
 {
-    internal interface IVirtualAccountService
+    public interface IVirtualAccountService
     {
-        Task CreateCollectionAccountAsync();
+        Task CreateCollectionAccount();
 
     }
 }

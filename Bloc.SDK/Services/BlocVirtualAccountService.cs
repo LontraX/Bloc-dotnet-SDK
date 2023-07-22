@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace Bloc.SDK.Services
 {
-    public partial class BlocService:IBillsPaymentService
+    public partial class BlocService : IVirtualAccountService
     {
+        public Task CreateCollectionAccountAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

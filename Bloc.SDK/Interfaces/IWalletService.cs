@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Bloc.SDK.Interfaces
 {
-    internal interface IWalletService
+    public interface IWalletService
     {
-        Task CreateWalletAsync();
-        Task GetWalletByIdAsync();
-        Task GetAllWalletsAsync();
+        Task CreateWallet();
+        Task GetWalletById();
+        Task GetAllWallets();
     }
 }

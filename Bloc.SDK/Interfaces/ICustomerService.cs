@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Bloc.SDK.Interfaces
 {
-    internal interface ICustomerService
+    public interface ICustomerService
     {
-        Task GetAllCustomersAsync();
-        Task GetCustomerByIDAsync();
+        Task GetAllCustomers();
+        Task GetCustomerByID();
 
-        Task CreateCustomerAsync();
-        Task UpdateCustomerAsync();
-        Task DeleteCustomerAsync();
+        Task CreateCustomer();
+        Task UpdateCustomer();
+        Task DeleteCustomer();
 
     }
 }

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "sJWzu9ml4OEiEFQyxTDmznK5oqeVnRT9FjJKQDY1QlwQGxioGT7jcZ09ImewBCoIwD0l7DVmjF9FUd2aVSv0mw==",
+  "dgSpecHash": "fINm3et1hwZCQbgNa9Xns3sVhd1wHIH5cEAkl0JStO0uibqYm7stYTzQ0EUDSb759L/01RDwcHHxGATcyPHxBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Olumide Joda\\source\\repos\\bloc\\Bloc.SDK\\Bloc.SDK.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Olumide Joda\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Olumide Joda\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\Olumide Joda\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Olumide Joda\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

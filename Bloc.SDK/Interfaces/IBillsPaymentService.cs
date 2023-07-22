@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bloc.SDK.Interfaces
 {
-    internal interface IBillsPaymentService
+    public interface IBillsPaymentService
     {
     }
 }

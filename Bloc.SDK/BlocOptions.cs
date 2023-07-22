@@ -22,9 +22,34 @@ namespace Bloc.SDK
         /// </summary>
         public string ApiKey { get; set; } = null!;
 
-        public string Validate()
+
+        /// <summary>
+        ///     Default Api Version
+        /// </summary>
+        public string ApiVersion { get; set; } = null!;
+
+        /// <summary>
+        ///     Base Domain
+        /// </summary>
+        public string BaseDomain { get; set; } = null!;
+        
+
+        public void Validate()
         {
-            return string.Empty;
+            if (string.IsNullOrEmpty(ApiKey))
+            {
+                throw new ArgumentNullException(nameof(ApiKey));
+            }
+
+            if (string.IsNullOrEmpty(ApiVersion))
+            {
+                throw new ArgumentNullException(nameof(ApiVersion));
+            }
+
+            if (string.IsNullOrEmpty(BaseDomain))
+            {
+                throw new ArgumentNullException(nameof(BaseDomain));
+            }
         }
 
 
