@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Bloc.SDK.Models.Bills
 {
-    internal class MakePaymentRequest
+    public class MakeBillPaymentRequest
     {
         /// <summary>
         ///     This is the amount to be paid. It should always be passed in kobo. 

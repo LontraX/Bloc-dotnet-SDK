@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bloc.SDK.Models.Bills
 {
-    internal class MakePaymentResponse
+    public class SupportedBillsResponse
     {
     }
 }
