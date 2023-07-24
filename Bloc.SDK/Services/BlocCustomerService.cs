@@ -9,27 +9,27 @@ namespace Bloc.SDK.Services
 {
     public partial class BlocService : ICustomerService
     {
-        public Task CreateCustomerAsync()
+        public Task CreateCustomer()
         {
             throw new NotImplementedException();
         }
 
-        public Task DeleteCustomerAsync()
+        public Task DeleteCustomer()
         {
             throw new NotImplementedException();
         }
 
-        public Task GetAllCustomersAsync()
+        public Task GetAllCustomers()
         {
             throw new NotImplementedException();
         }
 
-        public Task GetCustomerByIDAsync()
+        public Task GetCustomerByID()
         {
             throw new NotImplementedException();
         }
 
-        public Task UpdateCustomerAsync()
+        public Task UpdateCustomer()
         {
             throw new NotImplementedException();
         }

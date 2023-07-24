@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Customer\" />
     <Folder Include="Models\VirtualAccount\" />
     <Folder Include="Models\Wallet\" />
     <Folder Include="Models\Transfer\" />
