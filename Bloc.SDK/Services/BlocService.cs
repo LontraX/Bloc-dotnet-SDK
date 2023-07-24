@@ -13,6 +13,7 @@ namespace Bloc.SDK.Services
 {
     public partial class BlocService:IBlocService,IDisposable
     {
+        private readonly IBlocAPIEndpoints _endpoint;
         private readonly HttpClient _httpClient;
         private bool _disposeHttpClient;
 
@@ -38,6 +39,7 @@ namespace Bloc.SDK.Services
 
             _httpClient.BaseAddress = new Uri(settings.BaseDomain);
             _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {settings.ApiKey}");
+            _endpoint = new BlocAPIEndpoints(settings.ApiVersion);
         }
 
         public IBillsPaymentService BillsPayment => this;
