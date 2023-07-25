@@ -21,7 +21,7 @@ namespace Bloc.SDK.Endpoints
 
         public string CreateCustomers()
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/customers";
         }
 
         public string CreateFixedAccounts()
@@ -60,9 +60,9 @@ namespace Bloc.SDK.Endpoints
             throw new NotImplementedException();
         }
 
-        public string GetCustomerById()
+        public string GetCustomerById(string customerID)
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/customers/{customerID}";
         }
 
         public string GetCustomers()

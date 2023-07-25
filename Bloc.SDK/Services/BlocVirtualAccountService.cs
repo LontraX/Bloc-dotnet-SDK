@@ -9,7 +9,7 @@ namespace Bloc.SDK.Services
 {
     public partial class BlocService : IVirtualAccountService
     {
-        public Task CreateCollectionAccountAsync()
+        public Task CreateCollectionAccount()
         {
             throw new NotImplementedException();
         }

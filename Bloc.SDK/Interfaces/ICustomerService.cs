@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bloc.SDK.Models.Customer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace Bloc.SDK.Interfaces
         Task GetAllCustomers();
         Task GetCustomerByID();
 
-        Task CreateCustomer();
+        Task<CreateCustomerResponse> CreateCustomer(CreateCustomerRequest createCustomerRequest);
         Task UpdateCustomer();
         Task DeleteCustomer();
 

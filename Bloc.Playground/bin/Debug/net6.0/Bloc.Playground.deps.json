@@ -6,14 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Bloc.SDK/1.0.0": {
+      "Bloc.Playground/1.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options": "7.0.1",
-          "Newtonsoft.Json": "13.0.3"
+          "Bloc.SDK": "1.0.0"
         },
         "runtime": {
-          "Bloc.SDK.dll": {}
+          "Bloc.Playground.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
@@ -55,11 +53,21 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {}
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "Bloc.SDK/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.1",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "Bloc.SDK.dll": {}
+        }
+      }
     }
   },
   "libraries": {
-    "Bloc.SDK/1.0.0": {
+    "Bloc.Playground/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -98,6 +106,11 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "Bloc.SDK/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

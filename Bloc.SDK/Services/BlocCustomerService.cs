@@ -1,17 +1,14 @@
-﻿using Bloc.SDK.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bloc.SDK.Extensions;
+using Bloc.SDK.Interfaces;
+using Bloc.SDK.Models.Customer;
 
 namespace Bloc.SDK.Services
 {
     public partial class BlocService : ICustomerService
     {
-        public Task CreateCustomer()
+        public async Task<CreateCustomerResponse> CreateCustomer(CreateCustomerRequest createCustomerRequest)
         {
-            throw new NotImplementedException();
+            return await _httpClient.PostAndReadAsAsync<CreateCustomerResponse>(_endpoint.CreateCustomers(), createCustomerRequest);
         }
 
         public Task DeleteCustomer()

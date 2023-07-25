@@ -9,17 +9,22 @@ namespace Bloc.SDK.Services
 {
     public partial class BlocService : IWalletService
     {
-        public Task CreateWalletAsync()
+        public Task CreateWallet(string customerID)
         {
             throw new NotImplementedException();
         }
 
-        public Task GetAllWalletsAsync()
+        public Task GetAllWallets()
         {
             throw new NotImplementedException();
         }
 
-        public Task GetWalletByIdAsync()
+        public Task GetCustomerWallets(string customerID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task GetWalletById(string walletID)
         {
             throw new NotImplementedException();
         }
