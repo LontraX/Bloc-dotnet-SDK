@@ -45,7 +45,7 @@ namespace Bloc.SDK.Endpoints
             throw new NotImplementedException();
         }
 
-        public string GetAccountById()
+        public string GetAccountById(string Id)
         {
             throw new NotImplementedException();
         }

@@ -16,7 +16,7 @@ namespace Bloc.SDK.Endpoints
         string UpgradeCustomerToKYCT2();
         string UpgradeCustomerToKYCT3();
         string UpdateCustomer();
-        string GetCustomerById();
+        string GetCustomerById(string customerID);
         string MeansofIdentification();
 
         string RevalidateCustomerKYC();
@@ -38,7 +38,7 @@ namespace Bloc.SDK.Endpoints
         string CreateFixedAccounts();
         string GetAccounts();
         string CreateCollectionAccount();
-        string GetAccountById();
+        string GetAccountById(string accountID);
         string GetAccountbyAccountNumber();
 
         string GetCustomerAccounts();

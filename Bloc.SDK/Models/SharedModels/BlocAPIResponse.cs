@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace Bloc.SDK.Models.SharedModels
 {
-    public record BlocAPIResponse<T>
+    public record BlocAPIResponse
     {
         [JsonProperty("success")]
         [JsonPropertyName("success")]
         public bool Success { get; set; }
 
-        [JsonProperty("data")]
-        [JsonPropertyName("data")]
-        public T? Data { get; set; }
+        //[JsonProperty("data")]
+        //[JsonPropertyName("data")]
+        //public T? Data { get; set; }
 
         [JsonProperty("message")]
         [JsonPropertyName("message")]

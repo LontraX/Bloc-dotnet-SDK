@@ -1,22 +1,15 @@
-﻿using Newtonsoft.Json;
+﻿using Bloc.SDK.Models.SharedModels;
+using Newtonsoft.Json;
 using System.Text.Json.Serialization;
 
 
 namespace Bloc.SDK.Models.Customer
 {
-    public class CreateCustomerResponse
+    public record CreateCustomerResponse:BlocAPIResponse
     {
-        [JsonProperty("success")]
-        [JsonPropertyName("success")]
-        public bool Success { get; set; }
-
         [JsonProperty("data")]
         [JsonPropertyName("data")]
         public Data? Data { get; set; }
-
-        [JsonProperty("message")]
-        [JsonPropertyName("message")]
-        public string? Message { get; set; }
     }
 
     public class Address
@@ -74,7 +67,7 @@ namespace Bloc.SDK.Models.Customer
 
         [JsonProperty("SyncData")]
         [JsonPropertyName("SyncData")]
-        public SyncData SyncData { get; set; }
+        public SyncData? SyncData { get; set; }
 
         [JsonProperty("first_name")]
         [JsonPropertyName("first_name")]

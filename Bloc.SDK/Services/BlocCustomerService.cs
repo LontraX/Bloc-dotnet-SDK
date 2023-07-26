@@ -21,7 +21,7 @@ namespace Bloc.SDK.Services
             throw new NotImplementedException();
         }
 
-        public Task GetCustomerByID()
+        public Task GetCustomerByID(string customerID)
         {
             throw new NotImplementedException();
         }
