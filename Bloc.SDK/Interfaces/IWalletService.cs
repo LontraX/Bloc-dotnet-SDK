@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bloc.SDK.Models.Wallet;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,10 @@ namespace Bloc.SDK.Interfaces
     {
         /// <summary>
         ///     All wallets must be owned by a customer.
-        ///     To create a wallet, use this method and pass the customerID as a parameter.
+        ///     To create a wallet, use this method.
         /// </summary>
-        /// <param name="customerID">This is the unique id of the customer you want to create a wallet for.</param>
         /// <returns></returns>
-        Task CreateWallet(string customerID);
+        Task<CreateWalletResponse> CreateWallet(CreateWalletRequest createWalletRequest);
 
         /// <summary>
         ///    Gets the details of a particular wallet,

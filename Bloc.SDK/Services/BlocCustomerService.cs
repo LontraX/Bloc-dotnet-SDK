@@ -1,6 +1,7 @@
 ﻿using Bloc.SDK.Extensions;
 using Bloc.SDK.Interfaces;
 using Bloc.SDK.Models.Customer;
+using System.Net.Http.Json;
 
 namespace Bloc.SDK.Services
 {
@@ -16,9 +17,10 @@ namespace Bloc.SDK.Services
             throw new NotImplementedException();
         }
 
-        public Task GetAllCustomers()
+        public async Task<GetCustomersResponse> GetAllCustomers()
         {
-            throw new NotImplementedException();
+            return await _httpClient.GetFromJsonAsync<GetCustomersResponse>(_endpoint.GetCustomers());
+
         }
 
         public Task GetCustomerByID(string customerID)

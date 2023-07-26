@@ -31,7 +31,7 @@ namespace Bloc.SDK.Endpoints
 
         public string CreateWallet()
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/wallets";
         }
 
         public string CustomerDeviceValidation(string operatorID)
@@ -67,7 +67,7 @@ namespace Bloc.SDK.Endpoints
 
         public string GetCustomers()
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/customers";
         }
 
         public string GetCustomerWallets()

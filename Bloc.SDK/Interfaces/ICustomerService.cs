@@ -9,7 +9,7 @@ namespace Bloc.SDK.Interfaces
 {
     public interface ICustomerService
     {
-        Task GetAllCustomers();
+        Task<GetCustomersResponse> GetAllCustomers();
         Task GetCustomerByID(string customerID);
 
         Task<CreateCustomerResponse> CreateCustomer(CreateCustomerRequest createCustomerRequest);

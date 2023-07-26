@@ -1,4 +1,6 @@
-﻿using Bloc.SDK.Interfaces;
+﻿using Bloc.SDK.Extensions;
+using Bloc.SDK.Interfaces;
+using Bloc.SDK.Models.Wallet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +11,9 @@ namespace Bloc.SDK.Services
 {
     public partial class BlocService : IWalletService
     {
-        public Task CreateWallet(string customerID)
+        public async Task<CreateWalletResponse> CreateWallet(CreateWalletRequest createWalletRequest)
         {
-            throw new NotImplementedException();
+            return await _httpClient.PostAndReadAsAsync<CreateWalletResponse>(_endpoint.CreateWallet(),createWalletRequest);
         }
 
         public Task GetAllWallets()

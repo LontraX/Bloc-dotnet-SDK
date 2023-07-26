@@ -26,5 +26,7 @@ namespace Bloc.SDK.Extensions
             return await response.Content.ReadFromJsonAsync<TResponse>() ?? throw new InvalidOperationException();
         }
 
+
+
     }
 }
