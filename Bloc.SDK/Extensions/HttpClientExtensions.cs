@@ -26,6 +26,11 @@ namespace Bloc.SDK.Extensions
             return await response.Content.ReadFromJsonAsync<TResponse>() ?? throw new InvalidOperationException();
         }
 
+        public static async Task<TResponse> GetAndReadAsync<TResponse>(this HttpClient client, string uri)
+        {
+            var response = await client.GetAsync(uri);
+            return await response.Content.ReadFromJsonAsync<TResponse>();
+        }
 
 
     }

@@ -28,7 +28,7 @@ namespace Bloc.SDK.Interfaces
         /// </summary>
         /// <param name="walletID">This is the unique id of the wallet you want to view.</param>
         /// <returns></returns>
-        Task GetWalletById(string walletID);
+        Task<GetWalletByIdResponse> GetWalletById(string walletID);
 
 
         /// <summary>

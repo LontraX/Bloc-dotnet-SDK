@@ -27,9 +27,9 @@ namespace Bloc.SDK.Services
             throw new NotImplementedException();
         }
 
-        public Task GetWalletById(string walletID)
+        public async Task<GetWalletByIdResponse> GetWalletById(string walletID)
         {
-            throw new NotImplementedException();
+            return await _httpClient.GetAndReadAsync<GetWalletByIdResponse>(_endpoint.GetWalletById(walletID));
         }
     }
 }

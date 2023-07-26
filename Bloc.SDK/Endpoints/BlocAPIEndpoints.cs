@@ -93,9 +93,9 @@ namespace Bloc.SDK.Endpoints
             return $"/{_apiVersion}/bills/operators";
         }
 
-        public string GetWalletById()
+        public string GetWalletById(string walletID)
         {
-            throw new NotImplementedException();
+            return $"{_apiVersion}/wallets/{walletID}";
         }
 
         public string GetWallets()
