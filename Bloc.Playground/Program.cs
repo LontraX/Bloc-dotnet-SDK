@@ -3,6 +3,9 @@ using Bloc.SDK;
 using Bloc.SDK.Models.Customer;
 using Bloc.SDK.Models.Wallet;
 using Bloc.SDK.Services;
+using OpenAI.Managers;
+using OpenAI;
+using OpenAI.ObjectModels.RequestModels;
 
 
 
@@ -19,6 +22,10 @@ var request = new CreateCustomerRequest { CustomerType = "erson", Bvn = "0000000
 //Console.WriteLine(response.Message);
 //var ss = response;
 
-var rr = new CreateWalletRequest { Alias = "zari", CustomerId = "fgfgfgfg", PreferredBank = "corpus" };
-var createwallet = await _blocService.CreateWallet(rr);
-Console.WriteLine(createwallet.Message);
+//var rr = new CreateWalletRequest { Alias = "zari", CustomerId = "fgfgfgfg", PreferredBank = "corpus" };
+//var createwallet = await _blocService.CreateWallet(rr);
+
+var ww = await _blocService.Wallet.GetAllWallets();
+Console.WriteLine(ww.Message);
+
+

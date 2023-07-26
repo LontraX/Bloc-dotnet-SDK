@@ -35,7 +35,7 @@ namespace Bloc.SDK.Interfaces
         ///   Gets the details of all the wallets created by your organization
         /// </summary>
         /// <returns></returns>
-        Task GetAllWallets();
+        Task<GetWalletsResponse> GetAllWallets();
 
         /// <summary>
         ///   Gets all wallets associated with a customer

@@ -20,3 +20,11 @@ C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\obj\Debug\net6.0\refint\
 C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\obj\Debug\net6.0\Bloc.Playground.pdb
 C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\obj\Debug\net6.0\Bloc.Playground.genruntimeconfig.cache
 C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\obj\Debug\net6.0\ref\Bloc.Playground.dll
+C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\bin\Debug\net6.0\OpenAI.dll
+C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\bin\Debug\net6.0\Microsoft.Extensions.Http.dll
+C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Olumide Joda\source\repos\bloc\Bloc.Playground\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll

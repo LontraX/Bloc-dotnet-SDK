@@ -4,6 +4,7 @@ using Bloc.SDK.Models.Wallet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,9 +17,9 @@ namespace Bloc.SDK.Services
             return await _httpClient.PostAndReadAsAsync<CreateWalletResponse>(_endpoint.CreateWallet(),createWalletRequest);
         }
 
-        public Task GetAllWallets()
+        public async Task<GetWalletsResponse> GetAllWallets()
         {
-            throw new NotImplementedException();
+            return await _httpClient.GetFromJsonAsync<GetWalletsResponse>(_endpoint.GetWallets());
         }
 
         public Task GetCustomerWallets(string customerID)

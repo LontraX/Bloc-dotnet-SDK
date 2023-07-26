@@ -100,7 +100,7 @@ namespace Bloc.SDK.Endpoints
 
         public string GetWallets()
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/wallets";
         }
 
         public string MakePayment()
