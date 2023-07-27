@@ -70,9 +70,9 @@ namespace Bloc.SDK.Endpoints
             return $"/{_apiVersion}/customers";
         }
 
-        public string GetCustomerWallets()
+        public string GetCustomerWallets(string customerID)
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/wallets/customers/{customerID}";
         }
 
         public string GetOperatorProducts(string operatorID)

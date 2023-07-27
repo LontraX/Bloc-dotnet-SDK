@@ -27,7 +27,9 @@ var request = new CreateCustomerRequest { CustomerType = "erson", Bvn = "0000000
 
 //var ww = await _blocService.Wallet.GetAllWallets();
 
-var xx = await _blocService.Wallet.GetWalletById("6667777888888");
-Console.WriteLine(xx.Message);
+//var xx = await _blocService.Wallet.GetWalletById("6667777888888");
+
+var bn = await _blocService.GetCustomerWallets("3333333333");
+Console.WriteLine(bn.Message);
 
 

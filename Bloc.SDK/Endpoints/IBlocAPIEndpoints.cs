@@ -26,7 +26,7 @@ namespace Bloc.SDK.Endpoints
         string CreateWallet();
         string GetWallets();
         string GetWalletById(string walletID);
-        string GetCustomerWallets();
+        string GetCustomerWallets(string customerID);
 
 
 

@@ -19,12 +19,12 @@ namespace Bloc.SDK.Services
 
         public async Task<GetWalletsResponse> GetAllWallets()
         {
-            return await _httpClient.GetFromJsonAsync<GetWalletsResponse>(_endpoint.GetWallets());
+            return await _httpClient.GetAndReadAsync<GetWalletsResponse>(_endpoint.GetWallets());
         }
 
-        public Task GetCustomerWallets(string customerID)
+        public async Task<GetCustomerWalletsResponse> GetCustomerWallets(string customerID)
         {
-            throw new NotImplementedException();
+            return await _httpClient.GetAndReadAsync<GetCustomerWalletsResponse>(_endpoint.GetCustomerWallets(customerID));
         }
 
         public async Task<GetWalletByIdResponse> GetWalletById(string walletID)

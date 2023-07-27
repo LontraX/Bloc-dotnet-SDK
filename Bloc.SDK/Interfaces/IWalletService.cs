@@ -42,6 +42,6 @@ namespace Bloc.SDK.Interfaces
         /// </summary>
         /// <param name="customerID">This is the unique id of the customer.</param>
         /// <returns></returns>
-        Task GetCustomerWallets(string customerID);
+        Task<GetCustomerWalletsResponse> GetCustomerWallets(string customerID);
     }
 }
