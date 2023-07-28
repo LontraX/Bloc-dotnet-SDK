@@ -87,10 +87,10 @@ namespace Bloc.SDK.Endpoints
             return $"/{_apiVersion}/bills/supported";
         }
 
-        public string GetSupportedOperators()
+        public string GetSupportedOperators(string bill)
         {
             
-            return $"/{_apiVersion}/bills/operators";
+            return $"/{_apiVersion}/bills/operators?bill={System.Web.HttpUtility.UrlEncode(bill)}";
         }
 
         public string GetWalletById(string walletID)

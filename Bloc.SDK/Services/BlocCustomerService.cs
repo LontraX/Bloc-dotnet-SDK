@@ -19,7 +19,7 @@ namespace Bloc.SDK.Services
 
         public async Task<GetCustomersResponse> GetAllCustomers()
         {
-            return await _httpClient.GetFromJsonAsync<GetCustomersResponse>(_endpoint.GetCustomers());
+            return await _httpClient.GetAndReadAsync<GetCustomersResponse>(_endpoint.GetCustomers());
 
         }
 

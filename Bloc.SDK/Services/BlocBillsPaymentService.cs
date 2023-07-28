@@ -1,4 +1,5 @@
-﻿using Bloc.SDK.Interfaces;
+﻿using Bloc.SDK.Extensions;
+using Bloc.SDK.Interfaces;
 using Bloc.SDK.Models.Bills;
 using System;
 using System.Collections.Generic;
@@ -20,14 +21,14 @@ namespace Bloc.SDK.Services
             throw new NotImplementedException();
         }
 
-        public Task<SupportedBillsResponse> GetSupportedBills()
+        public async Task<SupportedBillsResponse> GetSupportedBills()
         {
-            throw new NotImplementedException();
+            return await _httpClient.GetAndReadAsync<SupportedBillsResponse>(_endpoint.GetSupportedBills());
         }
 
-        public Task<SupportedOperatorsResponse> GetSupportedOperators(string bill)
+        public async Task<SupportedOperatorsResponse> GetSupportedOperators(string bill)
         {
-            throw new NotImplementedException();
+            return await _httpClient.GetAndReadAsync<SupportedOperatorsResponse>(_endpoint.GetSupportedOperators(bill));
         }
 
         public Task<MakeBillPaymentResponse> MakeBillPayment(MakeBillPaymentRequest billPaymentRequest)
