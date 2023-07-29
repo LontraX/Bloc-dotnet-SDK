@@ -32,7 +32,12 @@ namespace Bloc.SDK
         ///     Base Domain
         /// </summary>
         public string BaseDomain { get; set; } = null!;
-        
+
+        /// <summary>
+        ///     Setting key for Json Setting Bindings
+        /// </summary>
+        public static readonly string SettingKey = "BlocServiceOptions";
+
 
         public void Validate()
         {
