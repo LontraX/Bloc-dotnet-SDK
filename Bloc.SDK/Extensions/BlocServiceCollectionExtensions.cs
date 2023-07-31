@@ -20,7 +20,21 @@ namespace Bloc.SDK.Extensions
             }
             return services.AddHttpClient<IBlocService, BlocService>();
         }
+        public static IHttpClientBuilder AddOpenAIService<TServiceInterface>(this IServiceCollection services, string name, Action<BlocOptions>? setupAction = null)
+        where TServiceInterface : class, IBlocService
+        {
+            var optionsBuilder = services.AddOptions<BlocOptions>(name);
+            if (setupAction != null)
+            {
+                optionsBuilder.Configure(setupAction);
+            }
+            else
+            {
+                optionsBuilder.BindConfiguration($"{BlocOptions.SettingKey}:{name}");
+            }
 
+            return services.AddHttpClient<TServiceInterface>();
+        }
 
     }
 }
