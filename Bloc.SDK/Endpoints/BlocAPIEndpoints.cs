@@ -16,7 +16,7 @@ namespace Bloc.SDK.Endpoints
 
         public string CreateCollectionAccount()
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/accounts/collections";
         }
 
         public string CreateCustomers()
@@ -26,7 +26,7 @@ namespace Bloc.SDK.Endpoints
 
         public string CreateFixedAccounts()
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/accounts";
         }
 
         public string CreateWallet()
@@ -40,19 +40,19 @@ namespace Bloc.SDK.Endpoints
             return $"/{_apiVersion}/bills/customer/validate/{operatorID}";
         }
 
-        public string GetAccountbyAccountNumber()
+        public string GetAccountbyAccountNumber(string accountNumber)
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/accounts/number/{accountNumber}";
         }
 
-        public string GetAccountById(string Id)
+        public string GetAccountById(string accountID)
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/accounts/{accountID}";
         }
 
         public string GetAccounts()
         {
-            throw new NotImplementedException();
+            return $"{_apiVersion}/accounts";
         }
 
         public string GetCustomerAccounts()

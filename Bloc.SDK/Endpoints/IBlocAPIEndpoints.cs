@@ -39,7 +39,7 @@ namespace Bloc.SDK.Endpoints
         string GetAccounts();
         string CreateCollectionAccount();
         string GetAccountById(string accountID);
-        string GetAccountbyAccountNumber();
+        string GetAccountbyAccountNumber(string accountNumber);
 
         string GetCustomerAccounts();
 
