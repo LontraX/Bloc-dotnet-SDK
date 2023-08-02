@@ -8,6 +8,7 @@ namespace Bloc.SDK.Endpoints
 {
     internal class BlocAPIEndpoints:IBlocAPIEndpoints
     {
+        
         private readonly string _apiVersion;
         public BlocAPIEndpoints(string apiVersion)
         {
