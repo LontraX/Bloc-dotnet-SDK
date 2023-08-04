@@ -13,5 +13,6 @@ namespace Bloc.SDK.Interfaces
         Task FundCard();
         Task BlockCard();
         Task FreezeCard();
+        Task WithdrawFromCard();
     }
 }
