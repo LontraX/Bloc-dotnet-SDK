@@ -12,11 +12,7 @@ namespace Bloc.SDK.Services
             return await _httpClient.PostAndReadAsAsync<CreateCustomerResponse>(_endpoint.CreateCustomers(), createCustomerRequest);
         }
 
-        public Task DeleteCustomer()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public async Task<GetCustomersResponse> GetAllCustomers()
         {
             return await _httpClient.GetAndReadAsync<GetCustomersResponse>(_endpoint.GetCustomers());

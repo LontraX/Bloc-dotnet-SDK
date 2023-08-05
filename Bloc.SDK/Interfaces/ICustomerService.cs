@@ -9,12 +9,17 @@ namespace Bloc.SDK.Interfaces
 {
     public interface ICustomerService
     {
+        Task<CreateCustomerResponse> CreateCustomer(CreateCustomerRequest createCustomerRequest);
         Task<GetCustomersResponse> GetAllCustomers();
+        Task UpgradeCustomerToKYCT1();
+        Task UpgradeCustomerToKYCT2();
+        Task UpgradeCustomerToKYCT3();
         Task GetCustomerByID(string customerID);
 
-        Task<CreateCustomerResponse> CreateCustomer(CreateCustomerRequest createCustomerRequest);
+        Task MeansOfIdentification();
+        Task RevalidateCustomerKYC();
         Task UpdateCustomer();
-        Task DeleteCustomer();
+        
 
     }
 }
