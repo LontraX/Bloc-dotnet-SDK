@@ -124,19 +124,19 @@ namespace Bloc.SDK.Endpoints
             throw new NotImplementedException();
         }
 
-        public string UpgradeCustomerToKYCT1()
+        public string UpgradeCustomerToKYCT1(string customerID)
         {
-            throw new NotImplementedException();
+            return $"/{_apiVersion}/customers/upgrade/t1/{customerID}";
         }
 
-        public string UpgradeCustomerToKYCT2()
+        public string UpgradeCustomerToKYCT2(string customerID)
         {
-            throw new NotImplementedException();
+            return $"{_apiVersion}customers/upgrade/t1/{customerID}";
         }
 
-        public string UpgradeCustomerToKYCT3()
+        public string UpgradeCustomerToKYCT3(string customerID)
         {
-            throw new NotImplementedException();
+            return $"{_apiVersion}customers/upgrade/t1/{customerID}";
         }
     }
 }

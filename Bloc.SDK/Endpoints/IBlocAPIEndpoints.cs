@@ -12,9 +12,9 @@ namespace Bloc.SDK.Endpoints
         string CreateCustomers();
         string GetCustomers();
 
-        string UpgradeCustomerToKYCT1();
-        string UpgradeCustomerToKYCT2();
-        string UpgradeCustomerToKYCT3();
+        string UpgradeCustomerToKYCT1(string customerID);
+        string UpgradeCustomerToKYCT2(string customerID);
+        string UpgradeCustomerToKYCT3(string customerID);
         string UpdateCustomer();
         string GetCustomerById(string customerID);
         string MeansofIdentification();
